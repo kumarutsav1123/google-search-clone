@@ -8,70 +8,94 @@
   <title>Google</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet"">
 
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 
   <!-- Navbar  -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container-fluid">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Gmail</a>
+          <a class="nav-link active" href="#">Gmail</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Images</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">IMG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">IMG</a>
+          <img class="nav-dp" src="res/unnamed.jpg">
         </li>
       </ul>
     </div>
   </nav>
 
 
-  <!-- Center Content  -->
+  <!-- Main Content  -->
 
   <section id="center-section">
-    <img src="res/googlelogo_color_272x92dp.png">
+    <img class="main-logo" src="res/googlelogo_color_272x92dp.png">
+
     <!-- // search bar -->
     <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search-aria">
-      <button class="btn btn-light text-nowrap" type="submit">Google Search</button>
-    </form>
-    <a href="https://www.google.com/doodles" class="btn btn-light" type="button">I'm Feeling Lucky</a>
+      <div class="container">
 
-    <p>Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ </p>
+        <div class="row">
+          <div class="col">
+            <input class="form-control rounded-pill search-bar" type="search" placeholder="Search" aria-label="Search Bar">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-light text-nowrap button-search" type="submit">Google Search</button>
+            <a href="https://www.google.com/doodles" class="btn btn-light button-search" type="button">I'm Feeling Lucky</a>
+          </div>
+
+        </div>
+    </form>
+    </div>
+
+    <p class="language-available">Google offered in: 
+      <a href="dummy.html"> हिन्दी </a>
+      <a href="dummy.html"> বাংলা </a>
+      <a href="dummy.html"> తెలుగు </a>
+
+      <a href="dummy.html"> मराठी </a>
+      <a href="dummy.html"> தமிழ் </a>
+      <a href="dummy.html"> ગુજરાતી </a>
+      <a href="dummy.html"> ಕನ್ನಡ </a>
+      <a href="dummy.html"> മലയാളം </a>
+      <a href="dummy.html"> ਪੰਜਾਬੀ </a>
+    </p>
   </section>
 
 
   <section id="footer-section">
 
-      <div class="row">
-        <p>India</p>
+    <nav class="navbar fixed-bottom bg-body-tertiary">
+      <div class="container-fluid">
+        <p class="ms-4">India</p>
       </div>
-      <div class="row">
-        <p>
-          <a href="dummy.html">About</a>
-          <a href="dummy.html">Advertising</a>
-          <a href="dummy.html">Business</a>
-          <a href="dummy.html">How Search works</a>
-          <a href="dummy.html">Privacy</a>
-          <a href="dummy.html">Terms</a>
-          <a href="dummy.html">Settings</a>
-        </p>
 
-    </div>
+      <div class="container-fluid">
+
+
+        <a class="nav-link ms-4" href="dummy.html">About</a>
+        <a class="nav-link ms-4" href="dummy.html">Advertising</a>
+        <a class="nav-link ms-4" href="dummy.html">Business</a>
+        <a class="nav-link ms-4" href="dummy.html">How Search works</a>
+        <a class="nav-link ms-auto" href="dummy.html">Privacy</a>
+        <a class="nav-link ms-4" href="dummy.html">Terms</a>
+        <a class="nav-link ms-4 me-4" href="dummy.html">Settings</a>
+      </div>
+    </nav>
 
   </section>
 
-</body>
+  </body>
 
 </html>
